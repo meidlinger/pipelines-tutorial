@@ -443,7 +443,14 @@ Pipelinerun started: build-and-deploy-run-xy7rw
 In order to track the pipelinerun progress run:
 tkn pipelinerun logs build-and-deploy-run-xy7rw -f -n pipelines-tutorial
 ```
-As soon as you start the `build-and-deploy` pipeline, a pipelinerun will be instantiated and pods will be created to execute the tasks that are defined in the pipeline.
+SDGDemoBoot:
+```bash
+$ tkn pipeline start build-and-deploy \
+    -r git-repo=app-repo \
+    -r image=app-image \
+    -p deployment-name=springboot-demo
+```
+
 
 ```bash
 $ tkn pipeline list
