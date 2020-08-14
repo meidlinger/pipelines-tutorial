@@ -1,11 +1,11 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
-  name: vote-app
+  name: employee-app
 spec:
   serviceAccountName: pipeline
   triggers:
   - bindings:
-    - name: vote-app
+    - name: employee-app
     template:
-      name: vote-app
+      name: employee-app
