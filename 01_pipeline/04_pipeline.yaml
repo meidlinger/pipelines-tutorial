@@ -15,7 +15,7 @@ spec:
   tasks:
   - name: build-image
     taskRef:
-      name: buildah
+      name: s2i-java-11
       kind: ClusterTask
     resources:
       inputs:
