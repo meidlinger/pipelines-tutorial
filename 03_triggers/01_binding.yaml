@@ -1,7 +1,7 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
-  name: employee-app
+  name: springboot-demo
 spec:
   params:
   - name: git-repo-url

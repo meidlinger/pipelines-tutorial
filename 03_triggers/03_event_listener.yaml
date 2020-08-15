@@ -1,11 +1,11 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
-  name: employee-app
+  name: springboot-demo
 spec:
   serviceAccountName: pipeline
   triggers:
   - bindings:
-    - name: employee-app
+    - name: springboot-demo
     template:
-      name: employee-app
+      name: springboot-demo
