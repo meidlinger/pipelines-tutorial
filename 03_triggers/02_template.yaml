@@ -33,7 +33,7 @@ spec:
       type: image
       params:
       - name: url
-        value: image-registry.openshift-image-registry.svc:5000/employee/$(params.git-repo-name):latest
+        value: image-registry.openshift-image-registry.svc:5000/employee/springboot-demo:latest
 
   - apiVersion: tekton.dev/v1beta1
     kind: PipelineRun
