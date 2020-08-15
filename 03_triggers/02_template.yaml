@@ -52,4 +52,4 @@ spec:
           name: $(params.git-repo-name)-image-$(uid)
       params:
       - name: deployment-name
-        value: $(params.git-repo-name)
+        value: springboot-demo
